@@ -3,9 +3,14 @@
     <div class="col-5">
       <h3 class="bg-primary text-white p-3">{{ getName() }} To Do List</h3>
       <div class="input-group">
-        <input type="text" class="form-control" />
+        <input
+          type="text"
+          class="form-control"
+          [(ngModel)]="newItemDescription"
+          placeholder="Add a new task..."
+        />
         <div class="input-group-append">
-          <button class="btn btn-primary">Add</button>
+          <button class="btn btn-primary" (click)="addItem()">Add</button>
         </div>
       </div>
       <table class="table table-striped table-bordered">

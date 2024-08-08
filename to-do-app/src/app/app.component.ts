@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule, NgFor } from '@angular/common';
-import { Model } from './model';
+import { Model, TodoItem } from './model';
 import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'app-root',
@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 })
 export class AppComponent {
   model = new Model();
+  newItemDescription: string = '';
 
   getName() {
     return this.model.user;
@@ -19,5 +20,13 @@ export class AppComponent {
 
   getItems() {
     return this.model.items.filter((item) => !item.action);
+  }
+
+  addItem() {
+    if (this.newItemDescription.trim()) {
+      // Check if input is not empty
+      this.model.items.push(new TodoItem(this.newItemDescription, false));
+      this.newItemDescription = ''; // Clear input field after adding the item
+    }
   }
 }
