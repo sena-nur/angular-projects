@@ -1,27 +1,32 @@
-# FirstAngularApp
+# To-Do-App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.2.
+The To-Do-App is a task management application designed to help users organize and prioritize their daily tasks efficiently. Built with Angular, this application allows users to create, edit, and delete tasks, offering a simple yet powerful interface for managing to-do lists. The project showcases the capabilities of Angular in building dynamic and responsive web applications, with a focus on component-based architecture and best practices in frontend development.
 
-## Development server
+## Getting Started
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Development Server
 
-## Code scaffolding
+To start the development server, run:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```bash
+ng serve
 
-## Build
+To generate a new Angular element like a component, directive, pipe, service, class, guard, interface, enum, or module, use the following command:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```bash
+ng generate component component-name
 
-## Running unit tests
+To build the project, run:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+ng build
 
-## Running end-to-end tests
+To execute the unit tests, use:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash
+ng test
 
-## Further help
+For more help with Angular CLI commands, you can run:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+```bash
+ng help
