@@ -13,12 +13,16 @@ import { FormsModule } from '@angular/forms';
 export class AppComponent {
   model = new Model();
   newItemDescription: string = '';
+  isDisplay = false;
 
   getName() {
     return this.model.user;
   }
 
   getItems() {
+    if (this.isDisplay) {
+      return this.model.items;
+    }
     return this.model.items.filter((item) => !item.action);
   }
 
