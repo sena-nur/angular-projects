@@ -2,6 +2,9 @@
 
 The To-Do-App is a task management application designed to help users organize and prioritize their daily tasks efficiently. Built with Angular, this application allows users to create, edit, and delete tasks, offering a simple yet powerful interface for managing to-do lists. The project showcases the capabilities of Angular in building dynamic and responsive web applications, with a focus on component-based architecture and best practices in frontend development.
 
+![image](https://github.com/user-attachments/assets/ca314bcd-f631-43ea-b898-e67d8e09cee3)
+
+
 ## Getting Started
 
 ### Development Server
@@ -10,6 +13,7 @@ To start the development server, run:
 
 ```bash
 ng serve
+```
 
 ### Code Generation
 
@@ -17,6 +21,7 @@ To generate a new Angular element like a component, directive, pipe, service, cl
 
 ```bash
 ng generate component component-name
+```
 
 
 ### Building the Project
@@ -25,6 +30,7 @@ To build the project, run:
 
 ```bash
 ng build
+ ```
 
 ### Running Unit Tests
 
@@ -32,6 +38,7 @@ To execute the unit tests, use:
 
 ```bash
 ng test
+```
 
 ### Additional Help
 
@@ -39,3 +46,4 @@ For more help with Angular CLI commands, you can run:
 
 ```bash
 ng help
+```
